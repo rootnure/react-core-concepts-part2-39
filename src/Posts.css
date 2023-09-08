@@ -1,0 +1,24 @@
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid gray;
+    gap: 10px;
+}
+
+.post {
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .posts-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .posts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

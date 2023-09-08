@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import Post from "./Post";
+import './Posts.css';
 
 export default function Posts() {
     // 1. Create a state to store the data
@@ -13,8 +15,13 @@ export default function Posts() {
     }, []); // empty array means no dependency
 
     return(
-        <div className="">
+        <div>
             <h3>Posts: {posts.length}</h3>
+            <div className="posts-container">
+            {
+                posts.map(post => <Post post={post}></Post>)
+            }
+            </div>
         </div>
     )
 }
@@ -23,4 +30,5 @@ export default function Posts() {
  * 1. Create a state to store the data
  * 2. Create useEffect with no dependency
  * 3. Use fetch to load data
+ * 4. 
  */
