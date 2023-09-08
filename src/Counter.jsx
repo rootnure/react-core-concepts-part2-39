@@ -13,8 +13,6 @@ export default function Counter() {
         setCount(newCount);
     }
 
-    console.log(count);
-    
     return (
         <div style={{border: '2px solid yellow', borderRadius: '10px', marginBottom: '25px', padding: '20px'}}>
             <h3>Counter: {count}</h3>
