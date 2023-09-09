@@ -19,7 +19,7 @@ export default function Posts() {
             <h3>Posts: {posts.length}</h3>
             <div className="posts-container">
             {
-                posts.map(post => <Post post={post}></Post>)
+                posts.map(post => <Post key={post.id} post={post}></Post>)
             }
             </div>
         </div>

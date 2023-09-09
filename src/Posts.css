@@ -1,7 +1,7 @@
 .posts-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid gray;
+    border: 1px solid darkgray;
     gap: 10px;
 }
 
@@ -9,6 +9,18 @@
     border: 2px solid yellow;
     padding: 10px;
     border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 576px) {
